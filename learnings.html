@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Learnings | Riya's Portfolio</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .learning-card {
+            transition: all 0.3s ease;
+        }
+        .learning-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        .skill-level {
+            height: 6px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex-shrink-0 flex items-center">
+                        <span class="ml-3 text-xl font-bold text-gray-900">Riya's Internship Journal</span>
+                    </a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-center space-x-8">
+                        <a href="about.html" class="text-gray-900 hover:text-indigo-600 px-3 py-2 text-sm font-medium transition-all">About Me</a>
+                        <a href="internship.html" class="text-gray-900 hover:text-indigo-600 px-3 py-2 text-sm font-medium transition-all">Internship</a>
+                        <a href="tasks.html" class="text-gray-900 hover:text-indigo-600 px-3 py-2 text-sm font-medium transition-all">My Tasks</a>
+                        <a href="learnings.html" class="text-indigo-600 px-3 py-2 text-sm font-medium transition-all">Learnings</a>
+                        <a href="contact.html" class="bg-indigo-600 text-white px-6 py-2 rounded-md text-sm font-medium hover:bg-indigo-700 transition-all">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Learnings Header -->
+    <div class="bg-gradient-to-r from-indigo-500 to-purple-600 text-white py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6">My Key Learnings</h1>
+            <p class="text-xl max-w-3xl mx-auto">The knowledge and skills I gained during my Cognifyz internship</p>
+        </div>
+    </div>
+
+    <!-- Learnings Section -->
+    <div class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold text-gray-800 mb-4">Growth Through Experience</h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">This 1-month internship transformed me both technically and professionally</p>
+        </div>
+
+        <!-- Technical Learnings -->
+        <div class="mb-20">
+            <h3 class="text-2xl font-semibold text-gray-800 mb-8 flex items-center">
+                <span class="w-8 h-8 bg-indigo-100 text-indigo-600 rounded-full flex items-center justify-center mr-3">
+                    <i class="fas fa-code"></i>
+                </span>
+                Technical Skills
+            </h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Learning Card 1 -->
+                <div class="bg-white rounded-xl p-6 shadow-md learning-card">
+                    <div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-laptop-code text-xl"></i>
+                    </div>
+                    <h4 class="text-xl font-semibold text-gray-800 mb-3">Responsive web design</h4>
+                    <p class="text-gray-600 mb-4"> Enhancing the user experience through responsive web design</p>
+                    <div>
+                        <div class="flex justify-between text-sm text-gray-500 mb-1">
+                            <span>Before</span>
+                            <span>After</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-2 mb-2">
+                            <div class="skill-level h-2 rounded-full bg-gradient-to-r from-blue-400 to-indigo-600" style="width: 30%"></div>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-2">
+                            <div class="skill-level h-2 rounded-full bg-gradient-to-r from-green-400 to-teal-600" style="width: 85%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Learning Card 2 -->
+                <div class="bg-white rounded-xl p-6 shadow-md learning-card">
+                    <div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-paint-brush text-xl"></i>
+                    </div>
+                    <h4 class="text-xl font-semibold text-gray-800 mb-3">Tailwind CSS and framework </h4>
+                    <p class="text-gray-600 mb-4">Learned utility-first CSS approach to rapidly build beautiful, responsive interfaces without leaving HTML.</p>
+                    <div>
+                        <div class="flex justify-between text-sm text-gray-500 mb-1">
+                            <span>Before</span>
+                            <span>After</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-2 mb-2">
+                            <div class="skill-level h-2 rounded-full bg-gradient-to-r from-blue-400 to-indigo-600" style="width: 20%"></div>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-2">
+                            <div class="skill-level h-2 rounded-full bg-gradient-to-r from-green-400 to-teal-600" style="width: 90%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Learning Card 3 -->
+                <div class="bg-white rounded-xl p-6 shadow-md learning-card">
+                    <div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-server text-xl"></i>
+                    </div>
+                    <h4 class="text-xl font-semibold text-gray-800 mb-3">API Integration</h4>
+                    <p class="text-gray-600 mb-4">Gained experience in fetching data from REST APIs, handling responses, and error management.</p>
+                    <div>
+                        <div class="flex justify-between text-sm text-gray-500 mb-1">
+                            <span>Before</span>
+                            <span>After</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-2 mb-2">
+                            <div class="skill-level h-2 rounded-full bg-gradient-to-r from-blue-400 to-indigo-600" style="width: 40%"></div>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-2">
+                            <div class="skill-level h-2 rounded-full bg-gradient-to-r from-green-400 to-teal-600" style="width: 80%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Professional Learnings -->
+        <div class="mb-20">
+            <h3 class="text-2xl font-semibold text-gray-800 mb-8 flex items-center">
+                <span class="w-8 h-8 bg-indigo-100 text-indigo-600 rounded-full flex items-center justify-center mr-3">
+                    <i class="fas fa-briefcase"></i>
+                </span>
+                Professional Growth
+            </h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Learning Card 4 -->
+                <div class="bg-white rounded-xl p-6 shadow-md learning-card">
+                    <div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-users text-xl"></i>
+                    </div>
+                    <h4 class="text-xl font-semibold text-gray-800 mb-3">🧑‍💻 Solo Development Workflow</h4>
+                    <p class="text-gray-600 mb-4">While working solo, I followed collaborative coding practices like using GitHub for version control, organizing tasks systematically, and writing maintainable code as if I were working in a team.</p>
+                    <div class="flex items-center text-sm text-gray-500">
+                        <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                        <span>Improved by 70%</span>
+                    </div>
+                </div>
+
+                <!-- Learning Card 5 -->
+                <div class="bg-white rounded-xl p-6 shadow-md learning-card">
+                    <div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-clock text-xl"></i>
+                    </div>
+                    <h4 class="text-xl font-semibold text-gray-800 mb-3">Time Management</h4>
+                    <p class="text-gray-600 mb-4">Developed ability to prioritize tasks and meet deadlines while maintaining code quality.</p>
+                    <div class="flex items-center text-sm text-gray-500">
+                        <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                        <span>Improved by 60%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Challenges Section -->
+        <div class="mb-20">
+            <h3 class="text-2xl font-semibold text-gray-800 mb-8 flex items-center">
+                <span class="w-8 h-8 bg-indigo-100 text-indigo-600 rounded-full flex items-center justify-center mr-3">
+                    <i class="fas fa-exclamation-triangle"></i>
+                </span>
+                Challenges & Solutions
+            </h3>
+            <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                <!-- Challenge 1 -->
+                <div class="border-b border-gray-200 last:border-0">
+                    <div class="p-6">
+                        <h4 class="text-lg font-semibold text-gray-800 mb-3">State Management Complexity</h4>
+                        <p class="text-gray-600 mb-3">Initially struggled with prop drilling and managing state across multiple components.</p>
+                        <div class="bg-blue-50 p-4 rounded-lg">
+                            <p class="text-blue-800 font-medium">Solution:</p>
+                            <p class="text-blue-700">Implemented React Context API and learned Redux for centralized state management.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Challenge 2 -->
+                <div class="border-b border-gray-200 last:border-0">
+                    <div class="p-6">
+                        <h4 class="text-lg font-semibold text-gray-800 mb-3">Responsive Design Issues</h4>
+                        <p class="text-gray-600 mb-3">Faced difficulties making components look good on all screen sizes.</p>
+                        <div class="bg-blue-50 p-4 rounded-lg">
+                            <p class="text-blue-800 font-medium">Solution:</p>
+                            <p class="text-blue-700">Mastered Tailwind's responsive utilities and adopted mobile-first development approach.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Reflection Section -->
+        <div class="bg-indigo-50 rounded-xl p-8">
+            <h3 class="text-2xl font-semibold text-indigo-800 mb-6">Final Reflection</h3>
+            <div class="prose max-w-none text-gray-700">
+                <p class="mb-4">
+                    This internship at Cognifyz Technologies has been an incredibly rewarding experience that accelerated my growth as a frontend developer. The hands-on projects pushed me out of my comfort zone and helped me develop both technical skills and professional maturity.
+                </p>
+                <p class="mb-4">
+                    Working on real-world applications taught me the importance of clean code, proper documentation, and thoughtful architecture. I learned that development is not just about making things work, but about creating maintainable, scalable solutions.
+                </p>
+                <p>
+                    Most importantly, this experience confirmed my passion for frontend development and gave me the confidence to take on more complex projects. I'm excited to continue building on these foundations as I progress in my career.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Riya's Portfolio</h3>
+                    <p class="text-gray-400">Documenting my internship journey at Cognifyz Technologies</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition-all">About Me</a></li>
+                        <li><a href="internship.html" class="text-gray-400 hover:text-white transition-all">Internship</a></li>
+                        <li><a href="tasks.html" class="text-gray-400 hover:text-white transition-all">My Tasks</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Resources</h3>
+                    <ul class="space-y-2">
+                        <li><a href="learnings.html" class="text-gray-400 hover:text-white transition-all">Learnings</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition-all">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Connect</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition-all"><i class="fab fa-linkedin-in text-xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-all"><i class="fab fa-github text-xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-all"><i class="fab fa-twitter text-xl"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 Riya's Internship Portfolio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

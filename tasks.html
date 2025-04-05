@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Tasks | Riya's Portfolio</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .task-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .progress-bar {
+            height: 6px;
+            border-radius: 3px;
+            background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex-shrink-0 flex items-center">
+                        <span class="ml-3 text-xl font-bold text-gray-900">Riya's Internship Journal</span>
+                    </a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-center space-x-8">
+                        <a href="about.html" class="text-gray-900 hover:text-indigo-600 px-3 py-2 text-sm font-medium transition-all">About Me</a>
+                        <a href="internship.html" class="text-gray-900 hover:text-indigo-600 px-3 py-2 text-sm font-medium transition-all">Internship</a>
+                        <a href="tasks.html" class="text-indigo-600 px-3 py-2 text-sm font-medium transition-all">My Tasks</a>
+                        <a href="learnings.html" class="text-gray-900 hover:text-indigo-600 px-3 py-2 text-sm font-medium transition-all">Learnings</a>
+                        <a href="contact.html" class="bg-indigo-600 text-white px-6 py-2 rounded-md text-sm font-medium hover:bg-indigo-700 transition-all">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Tasks Header -->
+    <div class="bg-gradient-to-r from-indigo-500 to-purple-600 text-white py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6">My Internship Tasks</h1>
+            <p class="text-xl max-w-3xl mx-auto">8 challenging projects completed during my 1-month internship</p>
+        </div>
+    </div>
+
+    <!-- Tasks Section -->
+    <div class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+        <!-- Task Filter -->
+        <div class="flex justify-between items-center mb-12">
+            <h2 class="text-2xl font-bold text-gray-800">All Tasks</h2>
+            <div class="flex space-x-2">
+                <button class="bg-indigo-600 text-white px-4 py-2 rounded-md text-sm">All</button>
+                <button class="bg-white text-gray-700 px-4 py-2 rounded-md text-sm border">Frontend</button>
+                <button class="bg-white text-gray-700 px-4 py-2 rounded-md text-sm border">React</button>
+                <button class="bg-white text-gray-700 px-4 py-2 rounded-md text-sm border">JavaScript</button>
+            </div>
+        </div>
+
+        <!-- Tasks Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Task 1 -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden task-card transition-all duration-300">
+                <div class="h-48 bg-gradient-to-r from-blue-100 to-purple-100 flex items-center justify-center">
+                    <i class="fas fa-laptop-code text-5xl text-indigo-600"></i>
+                </div>
+                <div class="p-6">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-xl font-bold text-gray-800">Task 1: Responsive Landing Page</h3>
+                        <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">Completed</span>
+                    </div>
+                    <p class="text-gray-600 mb-4">Built a fully responsive landing page using HTML, CSS and JavaScript with mobile-first approach.</p>
+                    <div class="mb-4">
+                        <div class="flex justify-between text-sm text-gray-500 mb-1">
+                            <span>Progress</span>
+                            <span>100%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-1.5">
+                            <div class="progress-bar h-1.5 rounded-full" style="width: 100%"></div>
+                        </div>
+                    </div>
+                    <div class="flex space-x-3">
+                        <a href="https://task-1-dusky-seven.vercel.app/" target="_blank" class="flex-1 bg-indigo-600 text-white text-center py-2 rounded-md hover:bg-indigo-700 transition">Live Demo</a>
+                        <a href="https://github.com/Riya220036/task1.git" target="_blank" class="flex-1 bg-gray-100 text-gray-800 text-center py-2 rounded-md hover:bg-gray-200 transition">Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Task 2 -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden task-card transition-all duration-300">
+                <div class="h-48 bg-gradient-to-r from-green-100 to-teal-100 flex items-center justify-center">
+                    <i class="fas fa-tablet-alt text-5xl text-green-600"></i>
+                </div>
+                <div class="p-6">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-xl font-bold text-gray-800">Task 2: Mobile Dashboard</h3>
+                        <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">Completed</span>
+                    </div>
+                    <p class="text-gray-600 mb-4">Created an interactive mobile dashboard with charts and data visualization using Chart.js.</p>
+                    <div class="mb-4">
+                        <div class="flex justify-between text-sm text-gray-500 mb-1">
+                            <span>Progress</span>
+                            <span>100%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-1.5">
+                            <div class="progress-bar h-1.5 rounded-full" style="width: 100%"></div>
+                        </div>
+                    </div>
+                    <div class="flex space-x-3">
+                        <a href="https://task-2-one-lyart.vercel.app/" target="_blank" class="flex-1 bg-indigo-600 text-white text-center py-2 rounded-md hover:bg-indigo-700 transition">Live Demo</a>
+                        <a href="https://github.com/Riya220036/task-2.git" target="_blank" class="flex-1 bg-gray-100 text-gray-800 text-center py-2 rounded-md hover:bg-gray-200 transition">Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Task 3 -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden task-card transition-all duration-300">
+                <div class="h-48 bg-gradient-to-r from-purple-100 to-pink-100 flex items-center justify-center">
+                    <i class="fas fa-sign-in-alt text-5xl text-purple-600"></i>
+                </div>
+                <div class="p-6">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-xl font-bold text-gray-800">Task 3: Auth System</h3>
+                        <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">Completed</span>
+                    </div>
+                    <p class="text-gray-600 mb-4">Implemented a secure authentication system with login, registration and password reset flows.</p>
+                    <div class="mb-4">
+                        <div class="flex justify-between text-sm text-gray-500 mb-1">
+                            <span>Progress</span>
+                            <span>100%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-1.5">
+                            <div class="progress-bar h-1.5 rounded-full" style="width: 100%"></div>
+                        </div>
+                    </div>
+                    <div class="flex space-x-3">
+                        <a href="https://task-3-murex.vercel.app/" target="_blank" class="flex-1 bg-indigo-600 text-white text-center py-2 rounded-md hover:bg-indigo-700 transition">Live Demo</a>
+                        <a href="https://github.com/Riya220036/task-3.git" target="_blank" class="flex-1 bg-gray-100 text-gray-800 text-center py-2 rounded-md hover:bg-gray-200 transition">Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Task 4 -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden task-card transition-all duration-300">
+                <div class="h-48 bg-gradient-to-r from-yellow-100 to-orange-100 flex items-center justify-center">
+                    <i class="fas fa-shopping-cart text-5xl text-yellow-600"></i>
+                </div>
+                <div class="p-6">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-xl font-bold text-gray-800">Task 4: E-commerce UI</h3>
+                        <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">Completed</span>
+                    </div>
+                    <p class="text-gray-600 mb-4">Developed product listing, cart and checkout pages for an e-commerce application.</p>
+                    <div class="mb-4">
+                        <div class="flex justify-between text-sm text-gray-500 mb-1">
+                            <span>Progress</span>
+                            <span>100%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-1.5">
+                            <div class="progress-bar h-1.5 rounded-full" style="width: 100%"></div>
+                        </div>
+                    </div>
+                    <div class="flex space-x-3">
+                        <a href="https://task-4-gamma-seven.vercel.app/" target="_blank" class="flex-1 bg-indigo-600 text-white text-center py-2 rounded-md hover:bg-indigo-700 transition">Live Demo</a>
+                        <a href="https://github.com/Riya220036/task-4.git" target="_blank" class="flex-1 bg-gray-100 text-gray-800 text-center py-2 rounded-md hover:bg-gray-200 transition">Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Task 5 -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden task-card transition-all duration-300">
+                <div class="h-48 bg-gradient-to-r from-red-100 to-pink-100 flex items-center justify-center">
+                    <i class="fas fa-chart-bar text-5xl text-red-600"></i>
+                </div>
+                <div class="p-6">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-xl font-bold text-gray-800">Task 5: Data Dashboard</h3>
+                        <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">Completed</span>
+                    </div>
+                    <p class="text-gray-600 mb-4">Created an admin dashboard with data tables, charts and export functionality.</p>
+                    <div class="mb-4">
+                        <div class="flex justify-between text-sm text-gray-500 mb-1">
+                            <span>Progress</span>
+                            <span>100%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-1.5">
+                            <div class="progress-bar h-1.5 rounded-full" style="width: 100%"></div>
+                        </div>
+                    </div>
+                    <div class="flex space-x-3">
+                        <a href="https://task-5-khaki.vercel.app/" target="_blank" class="flex-1 bg-indigo-600 text-white text-center py-2 rounded-md hover:bg-indigo-700 transition">Live Demo</a>
+                        <a href="https://github.com/Riya220036/task-5.git" target="_blank" class="flex-1 bg-gray-100 text-gray-800 text-center py-2 rounded-md hover:bg-gray-200 transition">Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Task 6 -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden task-card transition-all duration-300">
+                <div class="h-48 bg-gradient-to-r from-blue-100 to-cyan-100 flex items-center justify-center">
+                    <i class="fas fa-blog text-5xl text-blue-600"></i>
+                </div>
+                <div class="p-6">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-xl font-bold text-gray-800">Task 6: Blog Platform</h3>
+                        <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">Completed</span>
+                    </div>
+                    <p class="text-gray-600 mb-4">Built a blog platform with markdown support, categories and search functionality.</p>
+                    <div class="mb-4">
+                        <div class="flex justify-between text-sm text-gray-500 mb-1">
+                            <span>Progress</span>
+                            <span>100%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-1.5">
+                            <div class="progress-bar h-1.5 rounded-full" style="width: 100%"></div>
+                        </div>
+                    </div>
+                    <div class="flex space-x-3">
+                        <a href="https://task-6-ivory.vercel.app/" target="_blank" class="flex-1 bg-indigo-600 text-white text-center py-2 rounded-md hover:bg-indigo-700 transition">Live Demo</a>
+                        <a href="https://github.com/Riya220036/task-6.git" target="_blank" class="flex-1 bg-gray-100 text-gray-800 text-center py-2 rounded-md hover:bg-gray-200 transition">Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Task 7 -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden task-card transition-all duration-300">
+                <div class="h-48 bg-gradient-to-r from-purple-100 to-indigo-100 flex items-center justify-center">
+                    <i class="fas fa-map-marked-alt text-5xl text-purple-600"></i>
+                </div>
+                <div class="p-6">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-xl font-bold text-gray-800">Task 7: Location Finder</h3>
+                        <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">Completed</span>
+                    </div>
+                    <p class="text-gray-600 mb-4">Developed a location-based service with map integration and geolocation features.</p>
+                    <div class="mb-4">
+                        <div class="flex justify-between text-sm text-gray-500 mb-1">
+                            <span>Progress</span>
+                            <span>100%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-1.5">
+                            <div class="progress-bar h-1.5 rounded-full" style="width: 100%"></div>
+                        </div>
+                    </div>
+                    <div class="flex space-x-3">
+                        <a href="https://task-7-orcin.vercel.app/" target="_blank" class="flex-1 bg-indigo-600 text-white text-center py-2 rounded-md hover:bg-indigo-700 transition">Live Demo</a>
+                        <a href="https://github.com/Riya220036/task-7.git" target="_blank" class="flex-1 bg-gray-100 text-gray-800 text-center py-2 rounded-md hover:bg-gray-200 transition">Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Task 8 -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden task-card transition-all duration-300">
+                <div class="h-48 bg-gradient-to-r from-green-100 to-emerald-100 flex items-center justify-center">
+                    <i class="fas fa-tasks text-5xl text-green-600"></i>
+                </div>
+                <div class="p-6">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-xl font-bold text-gray-800">Task 8: Project Management</h3>
+                        <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">Completed</span>
+                    </div>
+                    <p class="text-gray-600 mb-4">Built a Kanban-style project management tool with drag-and-drop functionality.</p>
+                    <div class="mb-4">
+                        <div class="flex justify-between text-sm text-gray-500 mb-1">
+                            <span>Progress</span>
+                            <span>100%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-1.5">
+                            <div class="progress-bar h-1.5 rounded-full" style="width: 100%"></div>
+                        </div>
+                    </div>
+                    <div class="flex space-x-3">
+                        <a href="https://task-8-inky.vercel.app/" target="_blank" class="flex-1 bg-indigo-600 text-white text-center py-2 rounded-md hover:bg-indigo-700 transition">Live Demo</a>
+                        <a href="https://github.com/Riya220036/task-8.git" target="_blank" class="flex-1 bg-gray-100 text-gray-800 text-center py-2 rounded-md hover:bg-gray-200 transition">Code</a>
+                    </div>
+                </div>
+            </div>
